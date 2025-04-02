@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-    return <header className="header">
+    return <header>
         <Link to = "/"><img src="./img/icon choas 4.png"/></Link>
         <nav>
             <ul>
