@@ -1,5 +1,12 @@
+import Header from "../components/Header";
+
 function Home() {
-    return <h1>這是首頁</h1>;
+    return (
+    <>
+      <Header></Header>;
+    </>
+
+    );
   }
   
   export default Home;
