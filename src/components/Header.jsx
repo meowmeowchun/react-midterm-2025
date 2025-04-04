@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-    return <header>
+    return <header className =" bg-[#242424] h-[100vh]">
         <Link to = "/"><img src="./img/icon choas 4.png"/></Link>
         <nav>
             <ul>
