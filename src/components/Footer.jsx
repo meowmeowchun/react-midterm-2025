@@ -1,5 +1,3 @@
-
-
 function Footer() {
   return (
       <div className="sticky z-[-1] bottom-0 left-0 w-full h-80 bg-white flex justify-center items-center">
