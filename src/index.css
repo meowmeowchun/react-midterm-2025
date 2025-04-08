@@ -1,5 +1,5 @@
-@import "tailwindcss";
-/* filepath: c:\Users\user\Documents\大學\113-2\跨平台前端工程設計\Project\React Midterm\src\index.css */
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
 html,
 body {
   margin: 0; /* Remove default margin */
