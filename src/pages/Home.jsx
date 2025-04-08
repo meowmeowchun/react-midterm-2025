@@ -1,11 +1,11 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Content from "../components/Content";
+import Cover from "../components/Cover";
 function Home() {
     return (
     <>
       <Header></Header>
-      <Content></Content>
+      <Cover></Cover>
       <Footer></Footer>
     </>
 

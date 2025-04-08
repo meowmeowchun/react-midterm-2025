@@ -1,4 +1,4 @@
-function Content () {
+function Cover () {
     return (
         <div className="h-[100vh] bg-neutral">
         <h1>Welcome to the Content Component</h1>
@@ -6,4 +6,4 @@ function Content () {
         </div>
     )
 }
-export default Content;
+export default Cover;
