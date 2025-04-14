@@ -48,7 +48,7 @@ const SubscribeBanner = () => {
 
       {/* 感謝訊息 */}
       {subscribed && (
-        <div className="mt-6 text-green-500 font-semibold text-lg">
+        <div className="mt-6 text-primary font-semibold text-lg">
           Thanks for the subscription!
         </div>
       )}
