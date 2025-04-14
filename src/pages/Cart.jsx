@@ -12,15 +12,15 @@ function Cart() {
   });
 
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col">
+    <div className="bg-neutral text-accent min-h-screen flex flex-col">
       <Header />
 
       {/* 購物車清單區域 */}
       <main className="flex-1 px-4 md:px-20 py-8">
         {cartItems.map((item, index) => (
-          <div key={index} className="flex items-center bg-neutral p-4 mb-4 border border-white">
+          <div key={index} className="flex items-center bg-neutral p-4 mb-4 border border-accent">
             {/* 圖片 */}
-            <div className="w-24 h-24 bg-gray-400 mr-4" />
+            <div className="w-24 h-24 bg-accent mr-4" />
 
             {/* 商品名稱 */}
             <div className="flex-1 text-left font-bold">{item.name}</div>

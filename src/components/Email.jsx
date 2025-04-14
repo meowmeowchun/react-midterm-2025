@@ -25,7 +25,7 @@ const SubscribeBanner = () => {
       />
 
       {/* 標語文字 */}
-      <p className="text-red-600 font-bold text-lg uppercase tracking-wider mb-4">
+      <p className="text-primary font-bold text-lg uppercase tracking-wider mb-4">
         Subscribe to be notified for more of my works
       </p>
 
@@ -36,11 +36,11 @@ const SubscribeBanner = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full sm:w-64 px-4 py-2 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+          className="w-full sm:w-64 px-4 py-2 rounded-md bg-accent text-neutral placeholder-neutral focus:outline-none focus:ring-2 focus:ring-primary transition"
         />
         <button
           onClick={handleSubscribe}
-          className="bg-red-600 text-white font-bold px-5 py-2 rounded-md hover:bg-red-700 transition"
+          className="bg-primary text-accent font-bold px-5 py-2 rounded-md hover:bg-primary transition"
         >
           Subscribe
         </button>
