@@ -27,12 +27,12 @@ function Sketch() {
   return (
       <>
           <Header />
-          <div className="bg-black text-white min-h-screen px-4 py-8">
+          <div className="bg-neutral text-accent min-h-screen px-4 py-8">
               <div className="max-w-7xl mx-auto">
                   <h2 className="text-3xl font-bold mb-6 text-center">I'm Sketch</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                       {products.map(product => (
-                          <div key={product.id} className="bg-black rounded-2xl p-4 shadow hover:shadow-lg transition">
+                          <div key={product.id} className="bg-neutral rounded-2xl p-4 shadow hover:shadow-lg transition">
                               <img
                                   src={product.image}
                                   alt={product.title}
