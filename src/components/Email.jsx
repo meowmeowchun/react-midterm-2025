@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TheEye from "../../public/img/TheEye.png"; // Import the eye image
+import deman from "../../public/img/deman.png"; // Import the eye image
 
 const SubscribeBanner = () => {
   const [email, setEmail] = useState("");
@@ -19,7 +19,7 @@ const SubscribeBanner = () => {
     <div className="bg-neutral text-center py-12 px-4">
       {/* 怪物插圖 */}
       <img
-        src={TheEye}
+        src={deman}
         alt="Monster Illustration"
         className="mx-auto max-w-4xl w-full mb-8"
       />
