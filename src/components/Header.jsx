@@ -11,24 +11,25 @@ function Header() {
   ]; // navbar links
 
   return (
-    <header className="bg-neutral">
+    <header className="sticky top-0 z-50 light:bg-[linear-gradient(182.7deg,#000000_2.25%,rgba(0,0,0,0.94)_41.74%,rgba(0,0,0,0.91)_62.85%,rgba(0,0,0,0.76)_83.97%,rgba(0,0,0,0)_96.37%)] 
+    dark:bg-[linear-gradient(182.7deg,#ffffff_2.25%,#ffffff_41.74%,#ffffff_62.85%,#ffffff_83.97%,#ffffff_96.37%)]">
       <div className="flex justify-center py-4">
         <Link to="/">
           <img src="./img/icon choas 4.png" className="h-20" alt="Logo" />
         </Link>
       </div>
 
-      <nav className="shadow-md">
+      <nav>
         <ul className="flex justify-center gap-8 py-4">
           {links.map((link) => (
             <li key={link.to}>
               <Link
                 to={link.to}
-                className={`btn btn-outline btn-primary font-[Girassol] font-weight-400 btn-lg
-                  ${location.pathname === link.to ? "btn-active btn-primary" : "hover:btn-secondary"}
+                className={`text-primary dark:font-[Girassol] light:font-[Lexend_Tera] font-weight-400 text-2xl transition-all duration-300
+                  ${location.pathname === link.to ? "text-neutral" : "hover:text-secondary"}
                 `}
               >
-                {link.label}
+              {link.label}
               </Link>
             </li>
           ))}
