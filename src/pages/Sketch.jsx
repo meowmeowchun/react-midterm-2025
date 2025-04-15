@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Email from "../components/email";
+import Email from "../components/Email";
 import Footer from "../components/Footer";
 
 function Sketch() {

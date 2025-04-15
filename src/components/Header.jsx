@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { MdShoppingCart } from "react-icons/md";
-
+import { MdShoppingCart } from "react-icons/md"; // Importing the shopping cart icon from react-icons
 function Header() {
   const location = useLocation();
 
@@ -16,7 +15,7 @@ function Header() {
     dark:bg-[linear-gradient(182.7deg,#ffffff_2.25%,#ffffff_41.74%,#ffffff_62.85%,#ffffff_83.97%,#ffffff_96.37%)]">
         <div className="flex justify-center py-4">
           <Link to="/">
-            <img src="./img/icon choas 4.png" className="h-20" alt="Logo" />
+            <img src="/img/icon choas 4.png" className="h-20" alt="Logo" />
           </Link>
         </div>
         <div>
@@ -25,7 +24,7 @@ function Header() {
             to="/cart"
             className="absolute right-0 top-1/2 -translate-y-1/2 text-red-600 text-3xl hover:text-primary"
           >
-            <MdShoppingCart />
+            <MdShoppingCart></MdShoppingCart>
           </Link>
         </div>
         <nav className="shadow-md">

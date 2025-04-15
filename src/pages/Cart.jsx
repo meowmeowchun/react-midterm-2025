@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Email from "../components/email";
+import Email from "../components/Email";
 
 function Cart() {
   // 假資料（之後可用 context 替換）
