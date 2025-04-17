@@ -1,11 +1,10 @@
 import { createContext, useReducer, useContext } from "react";
 
-// Initial State
 const initialState = {
   cartItems: [],
+  notification: "", // ⭐ 新增通知訊息
 };
 
-// Reducer
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
@@ -18,15 +17,23 @@ const reducer = (state, action) => {
         ...state,
         cartItems: state.cartItems.filter((_, i) => i !== action.payload),
       };
+    case "SET_NOTIFICATION":
+      return {
+        ...state,
+        notification: action.payload,
+      };
+    case "CLEAR_NOTIFICATION":
+      return {
+        ...state,
+        notification: "",
+      };
     default:
       return state;
   }
 };
 
-// Context
 const CartContext = createContext();
 
-// Provider
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -37,5 +44,4 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// Custom Hook
 export const useCartContext = () => useContext(CartContext);

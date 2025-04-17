@@ -1,6 +1,4 @@
-// App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Fullart from "./pages/Fullart";
@@ -8,12 +6,17 @@ import Fanart from "./pages/Fanart";
 import Yamato from "./pages/Yamato";
 import Sketch from "./pages/Sketch";
 
-import { CartProvider } from "./redux/CartContext"; // ⭐ 加入 CartProvider
+import { CartProvider, useCartContext } from "./redux/CartContext";
+import Toast from "./components/Toast";
 import "./App.css";
 
-function App() {
+function AppContent() {
+  const { state } = useCartContext();
+  const { notification } = state;
+
   return (
-    <CartProvider> {/* ⭐ 包住整個應用，讓所有頁面都能使用購物車狀態 */}
+    <>
+      {notification && <Toast message={notification} />}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,6 +27,14 @@ function App() {
           <Route path="/sketch" element={<Sketch />} />
         </Routes>
       </Router>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <CartProvider>
+      <AppContent />
     </CartProvider>
   );
 }
