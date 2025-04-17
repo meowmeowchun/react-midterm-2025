@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Yamato 1",
+    "price": 850,
+    "image": "../public/yamato/yamato_1.png"
+  },
+  {
+    "id": 2,
+    "title": "Yamato 2",
+    "price": 469,
+    "image": "../public/yamato/yamato_2.png"
+  },
+  {
+    "id": 3,
+    "title": "Yamato 3",
+    "price": 222,
+    "image": "../public/yamato/yamato_3.png"
+  },
+  {
+    "id": 4,
+    "title": "Yamato 4",
+    "price": 441,
+    "image": "../public/yamato/yamato_4.png"
+  },
+  {
+    "id": 5,
+    "title": "Yamato 5",
+    "price": 223,
+    "image": "../public/yamato/yamato_5.png"
+  },
+  {
+    "id": 6,
+    "title": "Yamato 6",
+    "price": 449,
+    "image": "../public/yamato/yamato_6.png"
+  },
+  {
+    "id": 7,
+    "title": "Yamato 7",
+    "price": 152,
+    "image": "../public/yamato/yamato_7.png"
+  },
+  {
+    "id": 8,
+    "title": "Yamato 8",
+    "price": 873,
+    "image": "../public/yamato/yamato_8.png"
+  },
+  {
+    "id": 9,
+    "title": "Yamato 9",
+    "price": 105,
+    "image": "../public/yamato/yamato_9.png"
+  },
+  {
+    "id": 10,
+    "title": "Yamato 10",
+    "price": 528,
+    "image": "../public/yamato/yamato_10.png"
+  },
+  {
+    "id": 11,
+    "title": "Yamato 11",
+    "price": 497,
+    "image": "../public/yamato/yamato_11.png"
+  },
+  {
+    "id": 12,
+    "title": "Yamato 12",
+    "price": 262,
+    "image": "../public/yamato/yamato_12.png"
+  },
+  {
+    "id": 13,
+    "title": "Yamato 13",
+    "price": 874,
+    "image": "../public/yamato/yamato_13.png"
+  }
+]

@@ -2,15 +2,10 @@ import Header from "../components/Header";
 import Email from "../components/Email";
 import Footer from "../components/Footer";
 import { useCartContext } from "../redux/CartContext";
+import sketches from "../data/sketch.json"; // 加入這行
 
 function Sketch() {
   const { dispatch } = useCartContext();
-
-  const products = [
-    { id: 1, title: "fuk", price: "NT$500", image: "/images/fullart1.jpg" },
-    { id: 2, title: "shi", price: "NT$600", image: "/images/fullart2.jpg" },
-    { id: 3, title: "dih", price: "NT$700", image: "/images/fullart3.jpg" }
-  ];
 
   return (
     <>
@@ -19,23 +14,28 @@ function Sketch() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-center">I'm Sketch</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {products.map(product => (
+            {sketches.map(product => (
               <div key={product.id} className="bg-neutral rounded-2xl p-4 shadow hover:shadow-lg transition">
                 <img src={product.image} alt={product.title} className="w-full h-64 object-cover rounded-xl mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
-                <p className="text-lg">{product.price}</p>
+                <p className="text-lg">NT${product.price}</p>
                 <button
-                  onClick={() =>
+                  onClick={() => {
                     dispatch({
                       type: "ADD_TO_CART",
                       payload: {
                         name: product.title,
-                        price: parseInt(product.price.replace("NT$", "")),
+                        price: product.price,
                         quantity: 1,
                         image: product.image,
                       },
-                    })
-                  }
+                    });
+                    dispatch({
+                      type: "SET_NOTIFICATION",
+                      payload: "1 item added to cart",
+                    });
+                  }}
+                  
                   className="mt-2 px-4 py-2 bg-accent text-neutral rounded hover:opacity-80"
                 >
                   ADD TO CART

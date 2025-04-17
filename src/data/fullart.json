@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "title": "Fullart 1",
+    "price": 588,
+    "image": "../public/fullart/fullart_1.png"
+  },
+  {
+    "id": 2,
+    "title": "Fullart 2",
+    "price": 909,
+    "image": "../public/fullart/fullart_2.png"
+  },
+  {
+    "id": 3,
+    "title": "Fullart 3",
+    "price": 491,
+    "image": "../public/fullart/fullart_3.png"
+  },
+  {
+    "id": 4,
+    "title": "Fullart 4",
+    "price": 722,
+    "image": "../public/fullart/fullart_4.png"
+  },
+  {
+    "id": 5,
+    "title": "Fullart 5",
+    "price": 249,
+    "image": "../public/fullart/fullart_5.png"
+  },
+  {
+    "id": 6,
+    "title": "Fullart 6",
+    "price": 960,
+    "image": "../public/fullart/fullart_6.png"
+  },
+  {
+    "id": 7,
+    "title": "Fullart 7",
+    "price": 572,
+    "image": "../public/fullart/fullart_7.png"
+  },
+  {
+    "id": 8,
+    "title": "Fullart 8",
+    "price": 264,
+    "image": "../public/fullart/fullart_8.png"
+  },
+  {
+    "id": 9,
+    "title": "Fullart 9",
+    "price": 154,
+    "image": "../public/fullart/fullart_9.png"
+  },
+  {
+    "id": 10,
+    "title": "Fullart 10",
+    "price": 552,
+    "image": "../public/fullart/fullart_10.png"
+  },
+  {
+    "id": 11,
+    "title": "Fullart 11",
+    "price": 807,
+    "image": "../public/fullart/fullart_11.png"
+  },
+  {
+    "id": 12,
+    "title": "Fullart 12",
+    "price": 412,
+    "image": "../public/fullart/fullart_12.png"
+  },
+  {
+    "id": 13,
+    "title": "Fullart 13",
+    "price": 213,
+    "image": "../public/fullart/fullart_13.png"
+  },
+  {
+    "id": 14,
+    "title": "Fullart 14",
+    "price": 840,
+    "image": "../public/fullart/fullart_14.png"
+  },
+  {
+    "id": 15,
+    "title": "Fullart 15",
+    "price": 491,
+    "image": "../public/fullart/fullart_15.png"
+  },
+  {
+    "id": 16,
+    "title": "Fullart 16",
+    "price": 103,
+    "image": "../public/fullart/fullart_16.png"
+  },
+  {
+    "id": 17,
+    "title": "Fullart 17",
+    "price": 521,
+    "image": "../public/fullart/fullart_17.png"
+  },
+  {
+    "id": 18,
+    "title": "Fullart 18",
+    "price": 690,
+    "image": "../public/fullart/fullart_18.png"
+  },
+  {
+    "id": 19,
+    "title": "Fullart 19",
+    "price": 921,
+    "image": "../public/fullart/fullart_19.png"
+  },
+  {
+    "id": 20,
+    "title": "Fullart 20",
+    "price": 266,
+    "image": "../public/fullart/fullart_20.png"
+  },
+  {
+    "id": 21,
+    "title": "Fullart 21",
+    "price": 556,
+    "image": "../public/fullart/fullart_21.png"
+  },
+  {
+    "id": 22,
+    "title": "Fullart 22",
+    "price": 485,
+    "image": "../public/fullart/fullart_22.png"
+  },
+  {
+    "id": 23,
+    "title": "Fullart 23",
+    "price": 648,
+    "image": "../public/fullart/fullart_23.png"
+  },
+  {
+    "id": 24,
+    "title": "Fullart 24",
+    "price": 804,
+    "image": "../public/fullart/fullart_24.png"
+  },
+  {
+    "id": 25,
+    "title": "Fullart 25",
+    "price": 488,
+    "image": "../public/fullart/fullart_25.png"
+  },
+  {
+    "id": 26,
+    "title": "Fullart 26",
+    "price": 612,
+    "image": "../public/fullart/fullart_26.png"
+  },
+  {
+    "id": 27,
+    "title": "Fullart 27",
+    "price": 966,
+    "image": "../public/fullart/fullart_27.png"
+  },
+  {
+    "id": 28,
+    "title": "Fullart 28",
+    "price": 347,
+    "image": "../public/fullart/fullart_28.png"
+  },
+  {
+    "id": 29,
+    "title": "Fullart 29",
+    "price": 801,
+    "image": "../public/fullart/fullart_29.png"
+  },
+  {
+    "id": 30,
+    "title": "Fullart 30",
+    "price": 231,
+    "image": "../public/fullart/fullart_30.png"
+  },
+  {
+    "id": 31,
+    "title": "Fullart 31",
+    "price": 239,
+    "image": "../public/fullart/fullart_31.png"
+  },
+  {
+    "id": 32,
+    "title": "Fullart 32",
+    "price": 225,
+    "image": "../public/fullart/fullart_32.png"
+  },
+  {
+    "id": 33,
+    "title": "Fullart 33",
+    "price": 466,
+    "image": "../public/fullart/fullart_33.png"
+  },
+  {
+    "id": 34,
+    "title": "Fullart 34",
+    "price": 603,
+    "image": "../public/fullart/fullart_34.png"
+  },
+  {
+    "id": 35,
+    "title": "Fullart 35",
+    "price": 647,
+    "image": "../public/fullart/fullart_35.png"
+  },
+  {
+    "id": 36,
+    "title": "Fullart 36",
+    "price": 427,
+    "image": "../public/fullart/fullart_36.png"
+  },
+  {
+    "id": 37,
+    "title": "Fullart 37",
+    "price": 371,
+    "image": "../public/fullart/fullart_37.png"
+  },
+  {
+    "id": 38,
+    "title": "Fullart 38",
+    "price": 216,
+    "image": "../public/fullart/fullart_38.png"
+  },
+  {
+    "id": 39,
+    "title": "Fullart 39",
+    "price": 393,
+    "image": "../public/fullart/fullart_39.png"
+  },
+  {
+    "id": 40,
+    "title": "Fullart 40",
+    "price": 131,
+    "image": "../public/fullart/fullart_40.png"
+  },
+  {
+    "id": 41,
+    "title": "Fullart 41",
+    "price": 580,
+    "image": "../public/fullart/fullart_41.png"
+  },
+  {
+    "id": 42,
+    "title": "Fullart 42",
+    "price": 119,
+    "image": "../public/fullart/fullart_42.png"
+  },
+  {
+    "id": 43,
+    "title": "Fullart 43",
+    "price": 129,
+    "image": "../public/fullart/fullart_43.png"
+  },
+  {
+    "id": 44,
+    "title": "Fullart 44",
+    "price": 921,
+    "image": "../public/fullart/fullart_44.png"
+  },
+  {
+    "id": 45,
+    "title": "Fullart 45",
+    "price": 202,
+    "image": "../public/fullart/fullart_45.png"
+  },
+  {
+    "id": 46,
+    "title": "Fullart 46",
+    "price": 142,
+    "image": "../public/fullart/fullart_46.png"
+  },
+  {
+    "id": 47,
+    "title": "Fullart 47",
+    "price": 118,
+    "image": "../public/fullart/fullart_47.png"
+  },
+  {
+    "id": 48,
+    "title": "Fullart 48",
+    "price": 398,
+    "image": "../public/fullart/fullart_48.png"
+  },
+  {
+    "id": 49,
+    "title": "Fullart 49",
+    "price": 340,
+    "image": "../public/fullart/fullart_49.png"
+  },
+  {
+    "id": 50,
+    "title": "Fullart 50",
+    "price": 278,
+    "image": "../public/fullart/fullart_50.png"
+  },
+  {
+    "id": 51,
+    "title": "Fullart 51",
+    "price": 290,
+    "image": "../public/fullart/fullart_51.png"
+  },
+  {
+    "id": 52,
+    "title": "Fullart 52",
+    "price": 268,
+    "image": "../public/fullart/fullart_52.png"
+  },
+  {
+    "id": 53,
+    "title": "Fullart 53",
+    "price": 564,
+    "image": "../public/fullart/fullart_53.png"
+  }
+]
