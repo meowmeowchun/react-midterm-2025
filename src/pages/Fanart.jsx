@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Email from "../components/Email";
 import Footer from "../components/Footer";
 import { useCartContext } from "../redux/CartContext";
-import fanart from "../data/fanart.json"; // 讀取 JSON 資料
+import fanart from "../data/fanart.js"; 
 
 function Fanart() {
   const { dispatch } = useCartContext();
@@ -14,31 +14,35 @@ function Fanart() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-center">I'm Fanart</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {fanart.map(product => (
-              <div key={product.id} className="bg-neutral rounded-2xl p-4 shadow hover:shadow-lg transition">
+            {fanart.map((product) => (
+              <div
+                key={product.id}
+                className="bg-neutral rounded-2xl p-4 shadow hover:shadow-lg transition"
+              >
                 <img
                   src={product.image}
                   alt={product.title}
                   className="w-full h-64 object-cover rounded-xl mb-4"
+                  loading="lazy"
                 />
                 <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
                 <p className="text-lg">NT${product.price}</p>
                 <button
-                 onClick={() => {
-                  dispatch({
-                    type: "ADD_TO_CART",
-                    payload: {
-                      name: product.title,
-                      price: product.price,
-                      quantity: 1,
-                      image: product.image,
-                    },
-                  });
-                  dispatch({
-                    type: "SET_NOTIFICATION",
-                    payload: "1 item added to cart",
-                  });
-                }}
+                  onClick={() => {
+                    dispatch({
+                      type: "ADD_TO_CART",
+                      payload: {
+                        name: product.title,
+                        price: product.price,
+                        quantity: 1,
+                        image: product.image,
+                      },
+                    });
+                    dispatch({
+                      type: "SET_NOTIFICATION",
+                      payload: "1 item added to cart",
+                    });
+                  }}
                   className="mt-2 px-4 py-2 bg-accent text-neutral rounded hover:opacity-80"
                 >
                   ADD TO CART

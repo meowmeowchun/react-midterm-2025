@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Email from "../components/Email";
 import Footer from "../components/Footer";
 import { useCartContext } from "../redux/CartContext";
-import fullart from "../data/fullart.json"; // 加入這行
+import fullart from "../data/fullart.js"; 
 
 function Fullart() {
   const { dispatch } = useCartContext();

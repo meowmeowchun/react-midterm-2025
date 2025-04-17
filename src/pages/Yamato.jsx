@@ -2,7 +2,15 @@ import Header from "../components/Header";
 import Email from "../components/Email";
 import Footer from "../components/Footer";
 import { useCartContext } from "../redux/CartContext";
-import yamato from "../data/yamato.json"; // 加入這行
+import yamatoData from "../data/yamato";
+
+const images = import.meta.glob("../assets/yamato/*.png", { eager: true });
+
+const yamato = yamatoData.map((item, index) => {
+  const imagePath = `../assets/yamato/yamato_${item.id}.png`;
+  const image = images[imagePath]?.default || Object.values(images)[index]?.default;
+  return { ...item, image };
+});
 
 function Yamato() {
   const { dispatch } = useCartContext();

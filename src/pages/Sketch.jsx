@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Email from "../components/Email";
 import Footer from "../components/Footer";
 import { useCartContext } from "../redux/CartContext";
-import sketches from "../data/sketch.json"; // 加入這行
+import sketches from "../data/sketch.js"; // 加入這行
 
 function Sketch() {
   const { dispatch } = useCartContext();
