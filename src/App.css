@@ -22,10 +22,4 @@
   --color-accent: #000000;
 }
 
-@plugin "daisyui/theme" {
-  name: "dark";
-  default: true;
-  --color-primary: #ff0000;
-  --color-secondary: #FC6529;
-  --color-neutral: #000000;
-}
+
