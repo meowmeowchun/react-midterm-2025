@@ -19,9 +19,9 @@ function Header() {
 
   const links = [
     { to: "/fullart", label: "FULL ART" },
-    { to: "/fanart", label: "FAN ART" },
-    { to: "/yamato", label: "YAMATO" },
-    { to: "/sketch", label: "SKETCH" },
+    { to: "/fanart", label: "FAN  ART" },
+    { to: "/yamato", label: " YAMATO " },
+    { to: "/sketch", label: "SKETCH " },
   ];
 
   return (
@@ -31,7 +31,8 @@ function Header() {
           <img src="/img/icon choas 4.png" className="h-20" alt="Logo" />
         </Link>
       </div>
-    <div> {/* Theme controller */}
+      {/* Theme controller */}
+    <div className="absolute right-20 top-1/2 -translate-y-1/2 text-primary text-3xl hover:text-secondary">
       <label className="swap swap-rotate">
         {/* this hidden checkbox controls the state */}
         <input 
@@ -81,7 +82,7 @@ function Header() {
               <Link
                 to={link.to}
                 className={`text-primary font-[Girassol] text-2xl transition-all duration-300
-                ${location.pathname === link.to ? "text-neutral" : "hover:text-secondary"}
+                ${location.pathname === link.to ? "text-accent" : "hover:text-secondary"}
               `}
               >
                 {link.label}

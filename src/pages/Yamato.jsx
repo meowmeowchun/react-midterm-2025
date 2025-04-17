@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Email from "../components/Email";
 import Footer from "../components/Footer";
@@ -15,6 +16,33 @@ const yamato = yamatoData.map((item, index) => {
 function Yamato() {
   const { dispatch } = useCartContext();
 
+  // State for modal
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Close modal on Esc key press
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null); // Close the modal
+      }
+    };
+
+    // Add event listener
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  // Close modal when clicking outside
+  const handleOutsideClick = (e) => {
+    if (e.target.id === "modal-overlay") {
+      setSelectedImage(null);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -22,9 +50,19 @@ function Yamato() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-center">I'm Yamato</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {yamato.map(product => (
-              <div key={product.id} className="bg-neutral rounded-2xl p-4 shadow hover:shadow-lg transition">
-                <img src={product.image} alt={product.title} className="w-full h-64 object-cover rounded-xl mb-4" />
+            {yamato.map((product) => (
+              <div
+                key={product.id}
+                className="bg-neutral rounded-2xl p-4 shadow hover:shadow-lg transition"
+              >
+                {/* Clickable Image */}
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-64 object-cover rounded-xl mb-4 cursor-pointer"
+                  loading="lazy"
+                  onClick={() => setSelectedImage(product.image)} // Open modal with selected image
+                />
                 <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
                 <p className="text-lg">NT${product.price}</p>
                 <button
@@ -52,6 +90,24 @@ function Yamato() {
           </div>
         </div>
       </div>
+
+      {/* Modal for Full Image */}
+      {selectedImage && (
+        <div
+          id="modal-overlay"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={handleOutsideClick} // Close modal when clicking outside
+        >
+          <div className="relative">
+            <img
+              src={selectedImage}
+              alt="Full View"
+              className="max-w-full max-h-screen rounded"
+            />
+          </div>
+        </div>
+      )}
+
       <Email />
       <Footer />
     </>
