@@ -24,7 +24,7 @@ function Home() {
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
               <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-5xl font-[IM_FELL_French_Canon]">FANART</p>
+                <p className="text-white text-5xl font-[IM_FELL_French_Canon]">FANART</p>
               </div>
             </Link>
             <Link to="/fanart" className="relative group">
@@ -34,7 +34,7 @@ function Home() {
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
               <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-5xl font-[IM_FELL_French_Canon]">FANART</p>
+                <p className="text-white text-5xl font-[IM_FELL_French_Canon]">FANART</p>
               </div>
             </Link>
             <Link to="/fanart" className="relative group">
@@ -44,7 +44,7 @@ function Home() {
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
               <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-5xl font-[IM_FELL_French_Canon]">FANART</p>
+                <p className="text-white text-5xl font-[IM_FELL_French_Canon]">FANART</p>
               </div>
             </Link>
           </div>
@@ -125,7 +125,7 @@ function Home() {
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
               <div className="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 transition-opacity mt-20">
-                <p className="text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
+                <p className="text-white text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
               </div>
             </Link>
             <Link to="/sketch" className="relative group">
@@ -135,7 +135,7 @@ function Home() {
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
               <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity mb-10">
-                <p className="text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
+                <p className=" text-white text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
               </div>
             </Link>
             <Link to="/sketch" className="relative group">
@@ -145,7 +145,7 @@ function Home() {
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
               <div className="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 transition-opacity mt-20">
-                <p className="text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
+                <p className=" text-white text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
               </div>
             </Link>
           </div>
