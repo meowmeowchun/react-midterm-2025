@@ -4,6 +4,7 @@ import Email from "../components/Email";
 import Footer from "../components/Footer";
 import { useCartContext } from "../redux/CartContext";
 import yamatoData from "../data/yamato";
+import BackToTop from "../components/BackToTop.jsx";
 
 const images = import.meta.glob("../assets/yamato/*.png", { eager: true });
 
@@ -48,7 +49,6 @@ function Yamato() {
       <Header />
       <div className="bg-neutral text-accent min-h-screen px-4 py-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">I'm Yamato</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {yamato.map((product) => (
               <div
@@ -107,7 +107,7 @@ function Yamato() {
           </div>
         </div>
       )}
-
+      <BackToTop />
       <Email />
       <Footer />
     </>

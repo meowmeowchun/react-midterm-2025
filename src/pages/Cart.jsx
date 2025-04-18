@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Email from "../components/Email";
 import { useCartContext } from "../redux/CartContext"; // ⭐ 引入購物車 context
+import BackToTop from "../components/BackToTop.jsx";
 
 function Cart() {
   const { state, dispatch } = useCartContext(); // ⭐ 使用 context
@@ -50,6 +51,7 @@ function Cart() {
           ))
         )}
       </main>
+      <BackToTop />
 
       {/* Email 區塊 */}
       <Email />

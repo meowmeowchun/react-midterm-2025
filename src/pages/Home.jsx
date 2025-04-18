@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Cover from "../components/Cover";
 import Email from "../components/Email";
+import BackToTop from "../components/BackToTop.jsx";
 
 function Home() {
   return (
@@ -26,19 +27,25 @@ function Home() {
                 <p className="text-5xl font-[IM_FELL_French_Canon]">FANART</p>
               </div>
             </Link>
-            <Link to="/fanart">
+            <Link to="/fanart" className="relative group">
               <img
                 src="/img/fanart2.png"
                 alt="Fan Art"
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
+              <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-5xl font-[IM_FELL_French_Canon]">FANART</p>
+              </div>
             </Link>
-            <Link to="/fanart">
+            <Link to="/fanart" className="relative group">
               <img
                 src="/img/fanart3.png"
                 alt="Fan Art"
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
+              <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-5xl font-[IM_FELL_French_Canon]">FANART</p>
+              </div>
             </Link>
           </div>
 
@@ -81,7 +88,8 @@ function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-col-2 w-full h-auto mb-6">
+          {/* Third Row: 1 Images */}
+          <div className="grid grid-cols-1 w-full h-auto mb-6">
             <Link to="/yamato" className="relative group">
               <img
                 src="/img/yamato.png"
@@ -96,17 +104,54 @@ function Home() {
                 </p>
               </div>
             </Link>
-            <Link to="/fullart">
+            <Link to="/fullart" className="relative group">
               <img
                 src="/img/fullart.png"
                 alt="Full Art"
                 className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
               />
+              <div className="absolute inset-0 flex items-end justify-start opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-[11.5rem] font-[IM_FELL_French_Canon] bg-gradient-to-r from-white via-[#FBBFC8] to-[#DE3A53] bg-clip-text text-transparent">FULL<br/> ART</p>
+                  </div>
+            </Link>
+          </div>
+
+          {/* Fourth Row: 3 Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-6">
+            <Link to="/sketch" className="relative group">
+              <img
+                src="/img/sketch.png"
+                alt="Sketch"
+                className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
+              />
+              <div className="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 transition-opacity mt-20">
+                <p className="text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
+              </div>
+            </Link>
+            <Link to="/sketch" className="relative group">
+              <img
+                src="/img/sketch2.png"
+                alt="Sketch"
+                className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
+              />
+              <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity mb-10">
+                <p className="text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
+              </div>
+            </Link>
+            <Link to="/sketch" className="relative group">
+              <img
+                src="/img/sketch3.png"
+                alt="Sketch"
+                className="w-full h-auto object-cover hover:shadow-lg transition cursor-pointer"
+              />
+              <div className="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 transition-opacity mt-20">
+                <p className="text-7xl font-[IM_FELL_French_Canon]">SKETCH</p>
+              </div>
             </Link>
           </div>
         </div>
       </div>
-
+      <BackToTop />
       <Email />
       <Footer />
     </>
