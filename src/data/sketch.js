@@ -13,4 +13,6 @@ const sketch = Object.entries(sketchImages).map(([path, image], index) => {
   };
 });
 
+console.log(sketchImages); // Debugging: Log loaded images
+
 export default sketch;
