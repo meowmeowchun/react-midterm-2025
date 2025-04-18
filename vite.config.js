@@ -6,4 +6,8 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
+  server: {
+    // Redirect all unknown routes to index.html
+    historyApiFallback: true,
+  },
 })
